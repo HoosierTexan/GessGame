@@ -7,10 +7,10 @@ Locations on the board will be specified using columns labeled a-t and rows labe
 
 The GessGame class includes the following:
 
-An init method that initializes any data members.
-A method called get_game_state that takes no parameters and returns 'UNFINISHED', 'BLACK_WON' or 'WHITE_WON'.
-A method called resign_game that lets the current player concede the game, giving the other player the win.
-A method called make_move that takes two parameters - strings that represent the center square of the piece being moved and the desired new location of the center square. For example, make_move('b6', 'e9'). If the indicated move is not legal for the current player, or if the game has already been won, then it should just return False. Otherwise it should make the indicated move, remove any captured stones, update the game state if necessary, update whose turn it is, and return True.
+* An init method that initializes any data members.
+* A method called get_game_state that takes no parameters and returns 'UNFINISHED', 'BLACK_WON' or 'WHITE_WON'.
+* A method called resign_game that lets the current player concede the game, giving the other player the win.
+* A method called make_move that takes two parameters - strings that represent the center square of the piece being moved and the desired new location of the center square.    * For example, make_move('b6', 'e9'). If the indicated move is not legal for the current player, or if the game has already been won, then it should just return False.      * * Otherwise it should make the indicated move, remove any captured stones, update the game state if necessary, update whose turn it is, and return True.
 
 Here's a very simple example of how the class could be used:
 
